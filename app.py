@@ -26,6 +26,7 @@ def get_by_movie_years(year1: int, year2: int):
 def get_by_movie_rating(category):
     return jsonify(movies_by_raiting(category))
 
+
 @app.route('/genre/<genre>')
 def get_by_movie_genre(genre):
     return jsonify(movies_by_genre(genre))
